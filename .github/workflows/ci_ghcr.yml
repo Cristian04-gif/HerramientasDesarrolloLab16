@@ -22,8 +22,8 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: ../../node
-          file: ../../node/Dockerfile
+          context: ../node
+          file: ../node/Dockerfile
           tags: ghcr.io/cristian04-gif/servidor-app:latest
           push: true
           
